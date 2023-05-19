@@ -1,4 +1,6 @@
 {
     "port": 8080,
-    "mongoUri": "mongodb+srv://dimanya35:0T0q4UYXmi4N5dLc@cluster0.2dwpge3.mongodb.net/app?retryWrites=true&w=majority"
+    "mongoUri": "mongodb+srv://dimanya35:0T0q4UYXmi4N5dLc@cluster0.2dwpge3.mongodb.net/app?retryWrites=true&w=majority",
+    "accessSecret": "super secret",
+    "refeshSecret": "super super secret"
 }
