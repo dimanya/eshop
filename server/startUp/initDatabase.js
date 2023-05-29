@@ -1,10 +1,10 @@
-const flowersMock = require("../mock/flowers.json")
-const Flower = require("../models/Flower")
+const categoriesMock = require("../mock/categories.json")
+const Category = require("../models/Category")
 
 module.exports = async () => {
-    const flowers = await Flower.find()
-    if(flowers.length !== flowersMock.length) {
-        await createInitialEntity(Flower, flowersMock)
+    const categories = await Category.find()
+    if(categories.length !== categoriesMock.length) {
+        await createInitialEntity(Category, categoriesMock)
     }
 }
 

@@ -1,10 +1,12 @@
 const {Schema, model} = require("mongoose")
 
 const schema = new Schema({
-    name: {
+    flowerName: {
         type: String,
         required: true
-    }
+    },
+    category: String/* {type: Schema.Types.ObjectId, ref: "Category"} */,
+    userId: String/* {type: Schema.Types.ObjectId, ref: "User"} */
 }, {
     timestamps: true
 })

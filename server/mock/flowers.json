@@ -1,7 +1,3 @@
 [
-    {"_id": "oiupoiup;lhpoy", "name": "flower1"},
-    {"_id": "vbms;ljmb;lfgk", "name": "flower2"},
-    {"_id": ";xvlckgsfg'fkg", "name": "flower3"},
-    {"_id": "'fgomn';lbmn';", "name": "flower4"},
-    {"_id": "dkfjnblfgnb;fn", "name": "flower5"}
+    {"_id": "oiupoiup;lhpoy", "name": "flower", "category": "Розы", "userId": "wertgwefg"}
 ]
