@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
-import Flowers from './components/flowersList';
-import Header from './components/header';
+import React, { useState } from "react";
+import Flowers from "./components/flowersList";
+import Header from "./components/header";
 
-import api from "./api"
+import api from "./api";
 
 const App = () => {
+    const [flowers] = useState(api.flowers.fetchAll());
+    return (
+        <div>
+            <Header />
+            <Flowers flowers={flowers} />
+        </div>
+    );
+};
 
-    const [flowers, setFlowers] = useState(api.flowers.fetchAll())
-    return ( 
-    <div>
-        <Header/>
-        <Flowers flowers={flowers}/>
-    </div> 
-    )
-}
- 
 export default App;

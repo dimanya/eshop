@@ -1,5 +1,5 @@
-import * as flowers from "./fake.api/flower.api"
+import * as flowers from "./fake.api/flower.api";
 const API = {
     flowers
-}
-export default API
+};
+export default API;

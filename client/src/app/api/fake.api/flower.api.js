@@ -5,8 +5,7 @@ const categories = {
     peonies: { _id: "67rdca3eeb7f6fgeed471822", name: "Пионы" },
     asters: { _id: "67rdca3eeb7f6fgeed471824", name: "Астры" },
     buttercups: { _id: "67rdca3eeb7f6fgeed471829", name: "Лютики" }
-}
-
+};
 
 const flowers = [
     {
@@ -80,8 +79,8 @@ const flowers = [
         name: "Лютик зеленый",
         categories: categories.buttercups,
         price: 461
-    },
-]
+    }
+];
 export function fetchAll() {
-    return flowers
+    return flowers;
 }
