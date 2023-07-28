@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Flower from "./flower";
 import Pagination from "./pagination";
 import { paginate } from "../utils/paginate";
@@ -9,16 +9,20 @@ import api from "../api";
 const Flowers = ({ flowers, ...rest }) => {
     const count = flowers.length;
     const pageSize = 4;
+    const [categories, setCategories] = useState();
+    useEffect(() => {
+        api.categories.fetchAll().then((data) => setCategories(data));
+    }, []);
+
     const [currentPage, setCurrentPage] = useState(1);
-    const [categories] = useState(api.categories.fetchAll());
+
     const handlePageChange = (pageIndex) => {
         setCurrentPage(pageIndex);
     };
 
     const handleCategorySelect = (params) => {
-        console.log(params);
+
     };
-    console.log(categories);
 
     const flowerCrop = paginate(flowers, currentPage, pageSize);
     return (
