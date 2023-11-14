@@ -20,14 +20,20 @@ const Flowers = ({ flowers, ...rest }) => {
         setCurrentPage(pageIndex);
     };
 
-    const handleCategorySelect = (params) => {
-
-    };
+    const handleCategorySelect = (params) => {};
 
     const flowerCrop = paginate(flowers, currentPage, pageSize);
     return (
         <>
-            <GroupList items={categories} onItemSelect={handleCategorySelect} />
+            {categories && (
+                <GroupList
+                    items={categories}
+                    onItemSelect={handleCategorySelect}
+                    valueProperty="_id"
+                    contentProperty="name"
+                />
+            )}
+
             <table className="table">
                 <thead>
                     <tr>
